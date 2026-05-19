@@ -1,0 +1,20 @@
+{
+  "servers": {
+    "hevy-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "hevy-mcp"],
+      "env": {
+        "HEVY_API_KEY": "${input:hevyApiKey}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "id": "hevyApiKey",
+      "type": "promptString",
+      "description": "Hevy API Key (dostępny z Hevy PRO)",
+      "password": true
+    }
+  ]
+}
