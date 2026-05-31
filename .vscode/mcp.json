@@ -7,6 +7,16 @@
       "env": {
         "HEVY_API_KEY": "${input:hevyApiKey}"
       }
+    },
+    "youtube_transcript": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "mcp/youtube-transcript"
+      ]
     }
   },
   "inputs": [
