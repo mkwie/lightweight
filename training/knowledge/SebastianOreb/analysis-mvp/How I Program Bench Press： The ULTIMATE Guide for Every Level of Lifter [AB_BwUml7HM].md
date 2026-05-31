@@ -1,85 +1,126 @@
-# How I Program Bench Press： The ULTIMATE Guide for Every Level of Lifter [AB_BwUml7HM]
+# How I Program Bench Press： The ULTIMATE Guide for Every Level of Lifter
 
-## Metadane
-| Pole | Wartość |
-|---|---|
-| Autor | Sebastian Oreb |
-| Typ materiału | model programowania wyciskania leżąc |
-| Zakres | częstotliwość, periodyzacja blokowa, objętość tygodniowa, specyficzność, peak |
-| Problem przewodni | jak programować bench press dla różnych poziomów bez utknięcia w losowej rotacji wariacji i chronicznym zmęczeniu |
+## Priorytety techniczne
+- Retrakcja i depresja łopatek jako baza bench press.
+- Stabilna górna część grzbietu = krótszy ROM, lepszy transfer siły, mniejsza utrata pozycji.
+- Competition bench traktowany jako technika najcięższa i najbardziej specyficzna.
+- Arch ma funkcję mechaniczną:
+  - skrócenie ROM
+  - poprawa stabilności
+  - korzystniejsza dystrybucja napięcia na klatkę i obręcz barkową
 
-## Główna teza
-- Dla większości zawodników skuteczniejsze jest stabilne, etapowe programowanie bench press niż przypadkowa zmienność ćwiczeń albo stałe trenowanie ciężko przez cały rok.
-- Bazowy szkielet materiału to `16`-tygodniowy cykl przechodzący od nauki ruchu, przez hipertrofię i siłę, do peakingu oraz retestu.
-- Wraz ze zbliżaniem się do testu rośnie specyficzność oraz ciężar na sztandze, a spada objętość, ponieważ to objętość jest głównym źródłem zmęczenia maskującego dyspozycję siłową.
+## Ustawienie segmentów
+- Łopatki: cofnięte i obniżone przed zdjęciem sztangi.
+- Górny grzbiet: twarda baza kontaktu z ławką.
+- Pozycja bench competition style utrzymywana przez cały set; nie resetować łopatek między powtórzeniami.
+- Lockout w seriach wielopowtórzeniowych zwykle nie jest doprowadzany do pełnego „wybicia” łopatek w przód.
 
-## Architektura bloku 16-tygodniowego
-| Blok | Ramy czasowe | Cel dominujący | Główne środki | Parametry jawnie podane |
-|---|---|---|---|---|
-| nauka ruchu | tygodnie `1-4` | kompetencja techniczna i powtarzalność toru | competition bench `2x/tydz.` + trzeci dzień pressingu z OHP jako ruchem głównym | bench zwykle `5-6` powt.; hantle pomocniczo `8-10` |
-| hipertrofia | tygodnie `5-8` | rozbudowa tkankowa i pojemność pracy | jeden prawdziwy bench day + dwie inne wariacje pressingu, większy udział maszyn | zwykle `8-12` powt., praca bliżej upadku |
-| siła | tygodnie `9-12` | transmutacja do wyższej siły specyficznej | cięższy dzień competition bench, drugi dzień lżejszy/specyficzny, trzeci dzień lekko zmodyfikowany | dzień ciężki zwykle `3-6` powt.; drugi dzień około `6-8` powt. przy niższym koszcie |
-| peak / test | tygodnie `13-16` | ekspresja siły i przygotowanie do ciężkich singli | competition bench w najbardziej startowej technice, silna redukcja objętości | przykład progresji: `4x4 -> 3x3 -> 2x2 -> 1x1` |
+## Lockout i tor sztangi
+- Autor często stosuje ~95% lockoutu w klasycznych seriach comp bench.
+- Uzasadnienie:
+  - pełny lockout bywa związany z utratą retrakcji/protrakcji łopatek
+  - leżąc trudniej ponownie ustawić łopatki przed kolejnym repem
+- Pełny lockout pozostaje ważny, ale rozwijany głównie przez warianty akcesoryjne.
+
+## Warianty i ich funkcja
+### Spotto press
+- Pauza około 1 cm nad klatką.
+- Funkcja:
+  - rozwój kontroli w dolnej fazie
+  - ograniczenie zależności od stretch reflex
+  - rozwój siły w sticking point
+- Wariant wyraźnie trudniejszy niż competition bench.
+
+### Close grip bench
+- Narzędzie siłowe w fazie strength.
+- Większy nacisk na triceps i kontrolę sztangi.
+
+### Dumbbell press
+- Pełny lockout bez tak dużego ryzyka utraty pozycji jak w barbell rep work.
+- Rotacja kątów:
+  - flat
+  - incline
+  - high incline
+
+### OHP
+- Wysoka wartość transferowa dla ogólnej siły pressingowej.
+- W programie obecny zwłaszcza na wcześniejszych etapach.
+
+## Zasady doboru akcesoriów
+- Każde pchanie łączyć z przyciąganiem:
+  - rows
+  - lat pulldowns
+  - pull-ups
+- Cel:
+  - structural balance
+  - higiena barku
+  - lepsza stabilizacja łopatki
+- Maszyny:
+  - bardziej przydatne w hipertrofii
+  - mniej potrzebne w peaking
+- Free weights:
+  - wyższy priorytet w fazie strength i peaking
+
+## Periodyzacja 16-tygodniowa
+| Faza | Tygodnie | Cel | Częstotliwość | Główne parametry |
+|---|---:|---|---|---|
+| Learn to move | 1–4 | nauka wzorca | 3 press/week | 3 × 5–6, wysoka rezerwa, 2 × comp bench + 1 × OHP |
+| Hypertrophy | 5–8 | rozbudowa masy mięśniowej | 3 press/week | 3–4 × 8–12, wysoki RPE na akcesoriach, 1 × comp bench + 2 dni wariacji |
+| Strength | 9–12 | konwersja masy w siłę | 3 press/week | 8–12 twardych setów/tydz., 2 × comp bench + 1 wariacja |
+| Peaking | 13–16 | redukcja fatygi i ekspresja siły | 2–3 press/week | wysoka specyficzność, spadająca objętość, competition bench dominuje |
+
+## Charakterystyka faz
+### 1. Learn to move
+- Niski koszt zmęczeniowy.
+- Priorytet jakości technicznej nad objętością.
+- Po bench: dumbbell pressing 8–10 powtórzeń.
+- Po OHP: direct arm work.
+
+### 2. Hypertrophy
+- Najwyższa wariacyjność ćwiczeń.
+- Serie 8–12 powtórzeń, blisko upadku na bezpiecznych akcesoriach.
+- Wysoki udział dumbbells, maszyn, dips, incline/decline.
+- Budowa mięśnia jako baza późniejszego wzrostu siły.
+
+### 3. Strength
+- Większa specyficzność.
+- Typowy układ:
+  - dzień ciężki comp bench: 3–6 powtórzeń
+  - dzień lżejszy comp bench: 6–8 powtórzeń
+  - trzeci dzień: wariacja siłowa
+- Akcesoria zwykle w RPE 7–8, nie permanentnie do upadku.
+
+### 4. Peaking
+- Zasada: „fatigue masks fitness”.
+- Ograniczyć objętość, utrzymać/intensyfikować specyficzność.
+- Model schodkowy competition bench:
+  - tydzień 13: 4 × 4
+  - tydzień 14: 3 × 3
+  - tydzień 15: 2 × 2
+  - tydzień 16: 1 × 1
+- Akcesoria pozostają, ale z niższym kosztem zmęczeniowym i bez częstego failure.
 
 ## Częstotliwość i objętość
-| Kontekst | Zalecenie z materiału | Uwagi praktyczne |
-|---|---|---|
-| rozwój ogólny bench press | zwykle `2x/tydz.` | bazowa częstotliwość dla większości lifterów |
-| specjalizacja pod bench | zwykle `3x/tydz.` | każda ekspozycja ma inną funkcję, nie są to trzy identyczne dni |
-| tygodniowa objętość dla siły | orientacyjnie `8-12` serii roboczych / tydzień | materiał przywołuje heurystykę około `2-3` dni i około `4` serii na sesję |
-| zawodnik silniejszy / bardziej zaawansowany | raczej dolny zakres objętości | im większe ciężary absolutne, tym większy koszt pojedynczej serii |
+- Ogólny sweet spot bench specialization: 3 ekspozycje tygodniowo.
+- Przy zwykłym planie siłowym 2 ekspozycje tygodniowo nadal są użyteczne.
+- Początkujący tolerują i wykorzystują wyższą częstotliwość lepiej niż zaawansowani.
+- Im bardziej zaawansowany zawodnik, tym częściej wystarcza dolny zakres objętości na rozwój siły.
+- Faza siłowa: orientacyjnie 8–12 ciężkich serii tygodniowo.
 
-- W materiale pada przykład około `12` ciężkich serii tygodniowo jako poziomu, na którym autor rozwijał bench do około `180 kg`.
-- Ten przykład ma charakter ilustracyjny i nie jest przedstawiony jako sztywny standard dla każdego zawodnika.
+## Przerwy i organizacja serii
+- Bench i inne główne boje:
+  - zwykle 4–5 minut
+  - przy ciężkiej pracy siłowej nawet około 8 minut
+- Push/pull supersets:
+  - efektywne czasowo
+  - pomagają utrzymać balans strukturalny
+  - nie zastępują pełnej jakości odpoczynku przy najcięższych seriach
 
-## Logika poszczególnych bloków
-
-## Nauka ruchu
-- Pierwszy blok ma nauczyć zawodnika poruszania sztangą w sposób powtarzalny, a nie maksymalizować zmęczenie lokalne klatki piersiowej.
-- Dwie ekspozycje na competition bench w tygodniu służą wysokiej częstotliwości praktyki specyficznej techniki.
-- Trzeci dzień z OHP jako ruchem głównym rozszerza bodziec pressingu bez pełnego dublowania tego samego wzorca.
-- Zakres `5-6` powtórzeń pozwala jeszcze utrzymać jakość techniki, a jednocześnie budować bazę siłowo-mięśniową.
-
-## Hipertrofia
-- Drugi blok zwiększa zmienność środków i przesuwa akcent na budowę masy mięśniowej oraz tolerancji objętości.
-- Jeden dzień pozostaje bardziej bench-specific, a pozostałe dwa mogą być bardziej wariacyjne.
-- W materiale podkreślono większy udział maszyn i pracy bliżej upadku mięśniowego.
-- Zakres `8-12` powtórzeń pełni tu funkcję narzędzia hipertroficznego, a nie testu siły.
-
-## Siła
-- Trzeci blok zwiększa specyficzność i obniża całkowitą objętość względem fazy hipertrofii.
-- Jeden dzień staje się wyraźnie cięższy i operuje zwykle w zakresie `3-6` powtórzeń.
-- Drugi dzień utrzymuje wzorzec bardziej competition-like, ale z mniejszym kosztem zmęczeniowym i zwykle w zakresie około `6-8` powtórzeń.
-- Trzeci dzień może pozostać lekko zmodyfikowany, żeby utrzymać bodziec bez pełnego powielenia najcięższego wariantu.
-
-## Peak
-- Peaking nie służy budowie mięśni; jego rolą jest zmniejszenie zmęczenia i umożliwienie ekspresji wcześniej zbudowanej siły.
-- W materiale pada wprost zasada, że `fatigue masks fitness`, dlatego najpierw obcina się objętość.
-- Jednocześnie rośnie ciężar na sztandze i zgodność techniki z wariantem startowym.
-- Peaking ma nauczyć zawodnika obsługi ciężkich singli, a nie tylko wykonywania większej liczby umiarkowanie ciężkich serii.
-
-## Zasady specyficzności techniki
-- Competition style oznacza najcięższy legalny i najbardziej wydajny sposób wyciskania dla konkretnego zawodnika.
-- Materiał nie promuje jednej estetycznej techniki dla wszystkich, tylko technikę o najwyższym transferze do wyniku.
-- W końcowej fazie cyklu należy ograniczać wariacje na rzecz wzorca, który ma zostać przetestowany.
-
-## Reguły decyzyjne dla systemu trenerskiego
-1. Jeżeli celem jest stabilny rozwój bench bez specjalizacji, punktem wyjścia powinny być `2` ekspozycje tygodniowo.
-2. Jeżeli bench jest priorytetem, można podnieść częstotliwość do `3` ekspozycji tygodniowo, ale każdej trzeba nadać odrębną funkcję.
-3. Pierwszy blok należy traktować jako blok uczenia ruchu, a nie jako etap maksymalnej objętości hipertroficznej.
-4. W miarę przechodzenia od hipertrofii do siły należy podnosić specyficzność i obniżać nadmiarową wariacyjność.
-5. W fazie peak najpierw redukuje się objętość, a nie agresywnie dokłada kolejne serie ciężkiej pracy.
-6. Im silniejszy zawodnik, tym ostrożniej należy dobierać tygodniową liczbę serii roboczych.
-
-## Błędy programistyczne do unikania
-- Traktowanie każdego tygodnia jak fazy siłowej lub testowej.
-- Utrzymywanie wysokiej objętości hipertroficznej do samego retestu.
-- Programowanie trzech identycznych bench days w tygodniu bez zróżnicowania funkcji sesji.
-- Mylenie peakingu z dalszym budowaniem siły przez dokładanie objętości.
-- Sztywne kopiowanie objętości skutecznej u silniejszego zawodnika na liftera o niższym poziomie zaawansowania.
-
-## Ograniczenia materiału
-- Materiał podaje głównie logikę bloków i zakresy powtórzeń, a nie pełną tabelę `%1RM` dla każdej sesji.
-- Nie ma pełnej, formalnej rozpiski akcesoriów według kategorii wagowych, antropometrii czy historii urazów.
-- Przywołane dane o objętości tygodniowej mają charakter heurystyczny i częściowo autobiograficzny.
-- Model jest ramą praktyczną, która wymaga indywidualizacji do tolerancji objętości, techniki oraz celu startowego zawodnika.
+## Reguły operacyjne
+- „Najpierw naucz ruchu, potem buduj objętość.”
+- „Najpierw zbuduj mięsień, potem zamień go w siłę.”
+- „Im bliżej szczytu, tym mniej wariacji i mniej objętości.”
+- „Competition bench jest techniką najcięższą; używaj jej więcej, gdy rośnie specyficzność bloku.”
+- „Nie testuj maksów stale; testuj po pełnym cyklu.”
+- „Każde pchanie powinno mieć parę w przyciąganiu.”
+- „Lockout rozwijaj świadomie, ale nie kosztem utraty pozycji łopatki w serii.”
