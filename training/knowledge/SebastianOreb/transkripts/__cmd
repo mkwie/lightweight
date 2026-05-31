@@ -7,3 +7,5 @@ yt-dlp `
 >   --ignore-errors `
 >   -P "training/knowledge/SebastianOreb/transkripts" `
 >   --batch-file "training/knowledge/SebastianOreb/youtube_links.txt"
+
+yt-dlp --flat-playlist --print url "https://www.youtube.com/@AustralianStrengthCoach/videos" > youtube_links.txt
