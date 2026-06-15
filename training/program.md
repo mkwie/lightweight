@@ -140,8 +140,8 @@ Przy 2 sesjach tygodniowo: tydzień 1 robi 1+2, tydzień 2 robi 3+1, itd. Nie co
 
 | Ćwiczenie | Serie | Powtórzenia | Ciężar startowy |
 |---|---|---|---|
-| C1 Seated Bicep Curl (Dumbbell) | 3 | 10 | **~12–14 kg** |
-| C2 Tricep Pulldown (Cable) | 3 | 10 | **~20 kg** |
+| C1 Seated Bicep Curl (Dumbbell) | 3 | 10 | **~8 kg** |
+| C2 Tricep Pulldown (Cable) | 3 | 10 | **~22.5 kg** |
 
 ---
 
@@ -161,28 +161,29 @@ Przy 2 sesjach tygodniowo: tydzień 1 robi 1+2, tydzień 2 robi 3+1, itd. Nie co
 
 | Tydzień | Powtórzenia | Serie | A1 Incline Press | A2 DB Row |
 |---|---|---|---|---|
-| 1 | 10 | 3 | **55 kg** | **24 kg** |
-| 2 | 7–8 | 3 | **60 kg** | **28 kg** |
-| 3 | 5 | 4 | **65 kg** | **32 kg** |
+| 1 | 10 | 3 | **55 kg** | **29.5 kg** *(zrobione)* |
+| 2 | 7–8 | 3 | **60 kg** | **36 kg** |
+| 3 | 5 | 4 | **65 kg** | **40 kg** |
 
-> Incline Press szacowany na ~75% Bench Press (72.5 kg). 55 kg powinno wejść czysto × 10.
+> Incline Press szacowany na ~75% Bench Press (72.5 kg). 55 kg weszło czysto × 10 w tygodniu 1.
+> DB Row: 24 kg w tygodniu 1 okazało się za lekkie — faktyczne wykonanie 29.5 × 10 × 2. Limit hantli 40 kg — tydzień 3 jest sufitem. Kolejny blok: rozważyć tempo lub inny wariant (Chest Supported Row, T-bar).
 
 ---
 
-### B — High Bar Squat `3–8 powtórzeń`
+### B — High Bar Squat `8 powtórzeń — faza nauki`
 
-> Nowe ćwiczenie — wykonywany po superseriach A1/A2, więc mniej "świeży" niż Low Bar w dniu 1.
+> Nowe ćwiczenie w fazie nauki techniki — progresja liniowa przez cały blok, stałe 3 × 8. Następny blok (lipiec): wejście w standardowy schemat 8/5-6/3 od ~52.5 kg.
 
 **Rozgrzewka:**
 - 20 kg × 8
 - 35 kg × 5
-- 45 kg × 3
+- (tydzień 3: dodać 40 kg × 3)
 
-| Tydzień | Powtórzenia | Serie | Ciężar startowy |
+| Tydzień | Powtórzenia | Serie | Ciężar |
 |---|---|---|---|
-| 1 | 8 | 3 | **50 kg** |
-| 2 | 5–6 | 4 | **57.5 kg** |
-| 3 | 3 | 4 | **65 kg** |
+| 1 | 8 | 3 | **30 kg** *(zrobione — 2 serie, kalibracja)* |
+| 2 | 8 | 3 | **40 kg** |
+| 3 | 8 | 3 | **47.5 kg** |
 
 ---
 
