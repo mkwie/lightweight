@@ -141,7 +141,7 @@ Przy 2 sesjach tygodniowo: tydzień 1 robi 1+2, tydzień 2 robi 3+1, itd. Nie co
 | Ćwiczenie | Serie | Powtórzenia | Ciężar startowy |
 |---|---|---|---|
 | C1 Seated Bicep Curl (Dumbbell) | 3 | 10 | **~8 kg** |
-| C2 Tricep Pulldown (Cable) | 3 | 10 | **~22.5 kg** |
+| C2 Tricep Pulldown (Cable) | 3 | 10 | **30 kg** |
 
 ---
 
@@ -190,7 +190,7 @@ Przy 2 sesjach tygodniowo: tydzień 1 robi 1+2, tydzień 2 robi 3+1, itd. Nie co
 ### C — Wyprost nóg na zginacze biodra
 
 - 3 × 10 (każda noga)
-- Kabel (dolny zaczep) lub taśma oporowa | ~5–10 kg startowo
+- Bodyweight
 
 ---
 
