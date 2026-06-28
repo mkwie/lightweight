@@ -2,10 +2,8 @@
 agent: agent
 description: 'Tworzy nowy blok treningowy ABC (full body 3-dniowy) bazując na analizie ostatnich 2 miesięcy z Hevy. Ewolucja, nie rewolucja — zachowuje to co działa, wymienia to co utknęło.'
 tools:
-  - mcp_hevy-mcp_get-workouts
-  - mcp_hevy-mcp_get-exercise-history
-  - mcp_hevy-mcp_get-workout
-  - create_file
+  - hevy-mcp/*
+  - edit/editFiles
 ---
 
 Twoim zadaniem jest stworzenie nowego bloku treningowego ABC.
