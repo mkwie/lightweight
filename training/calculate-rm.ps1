@@ -1,13 +1,13 @@
 param (
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory = $true)]
     [string]$Exercise,
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory = $true)]
     [double]$CurrentWeight,
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory = $true)]
     [int]$CurrentReps,
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory = $true)]
     [string]$RepRange,
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory = $true)]
     [int]$Weeks,
     [double]$Round = 2.5
 )
@@ -41,16 +41,19 @@ Write-Output "--------|------|-------"
 for ($i = 0; $i -lt $Weeks; $i++) {
     if ($Weeks -eq 1) {
         $weekReps = $upper
-    } elseif ($i -eq 0) {
+    }
+    elseif ($i -eq 0) {
         $weekReps = $upper
-    } elseif ($i -eq ($Weeks - 1)) {
+    }
+    elseif ($i -eq ($Weeks - 1)) {
         $weekReps = $lower
-    } else {
+    }
+    else {
         $weekReps = [int][Math]::Floor($upper - $i * ($upper - $lower) / ($Weeks - 1))
     }
     $pct = Get-PercentageOf1RM $weekReps
     $weight = Round-ToNearest ($estimated1RM * $pct) $Round
-    $line = "T" + ($i+1) + "      | " + $weekReps + "RM   | " + $weight + " kg"
+    $line = "T" + ($i + 1) + "      | " + $weekReps + "RM   | " + $weight + " kg"
     Write-Output $line
 }
 Write-Output "=========================="
