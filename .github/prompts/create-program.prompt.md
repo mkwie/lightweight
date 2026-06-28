@@ -3,7 +3,9 @@ agent: agent
 description: 'Tworzy nowy blok treningowy ABC (full body 3-dniowy) bazując na analizie ostatnich 2 miesięcy z Hevy. Ewolucja, nie rewolucja — zachowuje to co działa, wymienia to co utknęło.'
 tools:
   - hevy-mcp/*
+  - read/readFile
   - edit/editFiles
+  - execute/runInTerminal
 ---
 
 Twoim zadaniem jest stworzenie nowego bloku treningowego ABC.
@@ -40,17 +42,15 @@ Następnie dla każdego **ćwiczenia złożonego** (progresowanego) z poprzednie
 |-------|------|---------|--------|----------------------|
 | ...   | ...  | ...     | ...    | ...                  |
 
-Ocena postępu: ✅ DOBRY / ⚠️ WOLNY / ❌ BRAK / 🔴 LIMIT SPRZĘTU
+Ocena postępu: ✅ DOBRY / ❌ BRAK
 Sugestia: [utrzymaj / zwiększ ciężar startowy / rozważ zamianę ćwiczenia]
 ```
 
 **Kryteria oceny postępu:**
-- ✅ DOBRY — przyrost ciężaru między T1 a T3, technika kontrolowana
-- ⚠️ WOLNY — minimalny przyrost lub konieczność powtarzania tygodnia
-- ❌ BRAK — ten sam ciężar przez cały blok lub regres
-- 🔴 LIMIT — ćwiczenie osiągnęło limit sprzętu (np. DB Row 40 kg)
+- ✅ DOBRY — cel w porównaniu z plikiem .md osiągnięty, albo nawet więcej
+- ❌ BRAK — nie udało się osiągnąć celu
 
-Dla każdego ćwiczenia z oceną ⚠️, ❌ lub 🔴 zaproponuj alternatywę z odpowiedniej sekcji z `reps.md`.
+Dla każdego ćwiczenia z oceną ❌ zaproponuj alternatywę z odpowiedniej sekcji z `reps.md`.
 
 ---
 
