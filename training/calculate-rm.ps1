@@ -8,15 +8,16 @@ param (
     [Parameter(Mandatory=$true)]
     [string]$RepRange,
     [Parameter(Mandatory=$true)]
-    [int]$Weeks
+    [int]$Weeks,
+    [double]$Round = 2.5
 )
 
 function Get-PercentageOf1RM ([int]$reps) {
     return 1.0 / (1.0 + ($reps / 30.0))
 }
 
-function Round-To2_5 ([double]$value) {
-    return [Math]::Round($value / 2.5) * 2.5
+function Round-ToNearest ([double]$value, [double]$step) {
+    return [Math]::Round($value / $step) * $step
 }
 
 $parts = $RepRange -split '-'
@@ -48,7 +49,7 @@ for ($i = 0; $i -lt $Weeks; $i++) {
         $weekReps = [int][Math]::Floor($upper - $i * ($upper - $lower) / ($Weeks - 1))
     }
     $pct = Get-PercentageOf1RM $weekReps
-    $weight = Round-To2_5 ($estimated1RM * $pct)
+    $weight = Round-ToNearest ($estimated1RM * $pct) $Round
     $line = "T" + ($i+1) + "      | " + $weekReps + "RM   | " + $weight + " kg"
     Write-Output $line
 }

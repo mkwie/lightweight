@@ -47,7 +47,7 @@ Sugestia: [utrzymaj / zwiększ ciężar startowy / rozważ zamianę ćwiczenia]
 ```
 
 **Kryteria oceny postępu:**
-- ✅ DOBRY — cel w porównaniu z plikiem .md osiągnięty, albo nawet więcej
+- ✅ DOBRY — cel w porównaniu z plikiem .md osiągnięty
 - ❌ BRAK — nie udało się osiągnąć celu
 
 Dla każdego ćwiczenia z oceną ❌ zaproponuj alternatywę z odpowiedniej sekcji z `reps.md`.
@@ -93,19 +93,13 @@ Na podstawie analizy i odpowiedzi użytkownika stwórz plik `training/${input:na
 2. **B1 + B2** — superseria PUSH + PULL (horyzontalne LUB wertykalne)
 3. **C** — 1–2 ćwiczenia accessory (3 × 10, bez progresji)
 
-Całość treningu: **≤50 minut** (rozgrzewka trwa ~10 min, więc trening właściwy musi się zmknąć w 50 min). Przy planowaniu czasu:
-- Ćwiczenie główne nogi: ~15 min (wliczając rozgrzewkę)
-- Superseria B: ~20 min
-- Accessory: ~10 min
-- Jeśli czas jest zbyt napięty, usuń jedno accessory zamiast rezygnować z rozgrzewek.
-
 **Rotacja wzorców przez 3 dni:**
 - Dzień 1: Squat (Low Bar lub High Bar) + Bench Press / Cable Row
 - Dzień 2: Hinge (RDL) + Overhead Press / Lat Pulldown
 - Dzień 3: Squat (drugi wariant) + Incline Press / Pull alternatywny
 
 **Progresja liniowa (ćwiczenia złożone):**
-- Punkt startowy = ostatni ciężar z bloku + 2.5 kg (jeśli ukończono blok z dobrą techniką) LUB ciężar bez zmiany (jeśli były problemy)
+- Nowy ciężar to jeśli udało się wykonać wszystkie serie w poprzednim tygodniu z dobrą techniką to dla ćwiczeń na nogi dodaj 5kg, dla ćwiczeń na górę ciała dodaj 2.5kg, w przeciwnym wypadku zostaw ciężar bez zmian, ciężar dodaj do ostatniego ciężaru z poprzedniego bloku czyli np. jeśli w ostatnim tygodniu poprzedniego bloku było robione 3RM to tu dodajemy ciężar i od niego liczymy poprzednie tygodnie do nowego bloku,
 - Zakres powtórzeń pobierz z `reps.md` dla danego ćwiczenia (np. `3–10`)
 - Tydzień 1 = górna granica zakresu, ostatni tydzień = dolna granica zakresu
 - Tygodnie pośrednie rozłóż równomiernie (interpolacja liniowa)
@@ -129,7 +123,7 @@ Całość treningu: **≤50 minut** (rozgrzewka trwa ~10 min, więc trening wła
 
 **Obliczanie ciężaru**
 - Użyj skryptu calculate-rm.ps1 np.
-.\calculate-rm.ps1 -Exercise "Wyciskanie" -CurrentWeight 85 -CurrentReps 5 -RepRange "3-10" -Weeks 5
+.\calculate-rm.ps1 -Exercise "Wyciskanie" -CurrentWeight 85 -CurrentReps 5 -RepRange "3-10" -Weeks 5 -Round 2.5
 Zwróci to ciężary dla każdego tygodnia.
 
 ### Format pliku wynikowego
