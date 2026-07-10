@@ -28,40 +28,40 @@ routines:
 
       - exercise_template_id: "D04AC939"
         name: "Low Bar Squat"
-        notes: "A — Low Bar Squat | 3×8 @ 72.5 kg | RPE 7"
+        notes: "A — Low Bar Squat | 3×8 @ 67.5 kg | RPE 7"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 55,   reps: 3 }
-          - { type: normal, weight_kg: 72.5, reps: 8 }
-          - { type: normal, weight_kg: 72.5, reps: 8 }
-          - { type: normal, weight_kg: 72.5, reps: 8 }
+          - { type: warmup, weight_kg: 57.5,   reps: 3 }
+          - { type: normal, weight_kg: 67.5, reps: 8 }
+          - { type: normal, weight_kg: 67.5, reps: 8 }
+          - { type: normal, weight_kg: 67.5, reps: 8 }
 
       - exercise_template_id: "79D0BB3A"
         name: "Bench Press (Barbell)"
-        notes: "B1 — Bench Press | SUPERSERIA z B2 | 3×10 @ 72.5 kg | RPE 7"
+        notes: "B1 — Bench Press | SUPERSERIA z B2 | 3×10 @ 67.5 kg | RPE 7"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 62.5, reps: 3 }
-          - { type: normal, weight_kg: 72.5, reps: 10 }
-          - { type: normal, weight_kg: 72.5, reps: 10 }
-          - { type: normal, weight_kg: 72.5, reps: 10 }
+          - { type: warmup, weight_kg: 57.5, reps: 3 }
+          - { type: normal, weight_kg: 67.5, reps: 10 }
+          - { type: normal, weight_kg: 67.5, reps: 10 }
+          - { type: normal, weight_kg: 67.5, reps: 10 }
 
       - exercise_template_id: "0393F233"
         name: "Seated Cable Row"
-        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 3×10 @ 60 kg"
+        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 3×10 @ 57.5 kg"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 30, reps: 10 }
-          - { type: warmup, weight_kg: 50, reps: 5 }
-          - { type: normal, weight_kg: 60, reps: 10 }
-          - { type: normal, weight_kg: 60, reps: 10 }
-          - { type: normal, weight_kg: 60, reps: 10 }
+          - { type: warmup, weight_kg: 47.5, reps: 5 }
+          - { type: normal, weight_kg: 57.5, reps: 10 }
+          - { type: normal, weight_kg: 57.5, reps: 10 }
+          - { type: normal, weight_kg: 57.5, reps: 10 }
 
       # Dead Hang: ćwiczenie czasowe — reps: 1 oznacza 1 powtórzenie trzymania
       - exercise_template_id: "B9380898"
@@ -81,28 +81,28 @@ routines:
 
       - exercise_template_id: "2B4B7310"
         name: "Romanian Deadlift (Barbell)"
-        notes: "A — Romanian Deadlift | 3×10 @ 70 kg | RPE 7"
+        notes: "A — Romanian Deadlift | 3×10 @ 65 kg | RPE 7"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 20, reps: 8 }
           - { type: warmup, weight_kg: 40, reps: 5 }
-          - { type: warmup, weight_kg: 60, reps: 3 }
-          - { type: normal, weight_kg: 70, reps: 10 }
-          - { type: normal, weight_kg: 70, reps: 10 }
-          - { type: normal, weight_kg: 70, reps: 10 }
+          - { type: warmup, weight_kg: 55, reps: 3 }
+          - { type: normal, weight_kg: 65, reps: 10 }
+          - { type: normal, weight_kg: 65, reps: 10 }
+          - { type: normal, weight_kg: 65, reps: 10 }
 
       - exercise_template_id: "7B8D84E8"
         name: "Overhead Press (Barbell)"
-        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 3×10 @ 50 kg | RPE 7"
+        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 3×10 @ 47.5 kg | RPE 7"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20, reps: 8 }
           - { type: warmup, weight_kg: 30, reps: 8 }
-          - { type: warmup, weight_kg: 45, reps: 5 }
-          - { type: normal, weight_kg: 50, reps: 10 }
-          - { type: normal, weight_kg: 50, reps: 10 }
-          - { type: normal, weight_kg: 50, reps: 10 }
+          - { type: warmup, weight_kg: 40, reps: 5 }
+          - { type: normal, weight_kg: 47.5, reps: 10 }
+          - { type: normal, weight_kg: 47.5, reps: 10 }
+          - { type: normal, weight_kg: 47.5, reps: 10 }
 
       # Chin Up BW: warmup = 3 negatywy (kontrolowane opuszczanie)
       - exercise_template_id: "29083183"
@@ -145,29 +145,29 @@ routines:
       # Dzień 3: A1+A2 jako superseria, B solo, C1+C2 jako superseria
       - exercise_template_id: "07B38369"
         name: "Incline Bench Press (Dumbbell)"
-        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 3×10 @ 26 kg | kalibracja | ciężar per ramię"
+        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 3×10 @ 30 kg | kalibracja | ciężar per ramię"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 12, reps: 8 }
           - { type: warmup, weight_kg: 18, reps: 5 }
-          - { type: warmup, weight_kg: 22, reps: 3 }
-          - { type: normal, weight_kg: 26, reps: 10 }
-          - { type: normal, weight_kg: 26, reps: 10 }
-          - { type: normal, weight_kg: 26, reps: 10 }
+          - { type: warmup, weight_kg: 25.5, reps: 3 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
 
       - exercise_template_id: "55E6546F"
         name: "Barbell Row"
-        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 3×10 @ 57.5 kg | kalibracja"
+        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 3×10 @ 52.5 kg | kalibracja"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
-          - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 50,   reps: 3 }
-          - { type: normal, weight_kg: 57.5, reps: 10 }
-          - { type: normal, weight_kg: 57.5, reps: 10 }
-          - { type: normal, weight_kg: 57.5, reps: 10 }
+          - { type: warmup, weight_kg: 37.5,   reps: 5 }
+          - { type: warmup, weight_kg: 45,   reps: 3 }
+          - { type: normal, weight_kg: 52.5, reps: 10 }
+          - { type: normal, weight_kg: 52.5, reps: 10 }
+          - { type: normal, weight_kg: 52.5, reps: 10 }
 
       # Zakroki T1 = BW kalibracja; od T2 ze sztangą (6E6EE645)
       - exercise_template_id: "32HKJ34K"
@@ -210,41 +210,41 @@ routines:
 
       - exercise_template_id: "D04AC939"
         name: "Low Bar Squat"
-        notes: "A — Low Bar Squat | 4×6 @ 75 kg | RPE 8"
+        notes: "A — Low Bar Squat | 4×6 @ 72.5 kg | RPE 8"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 55,   reps: 3 }
-          - { type: normal, weight_kg: 75,   reps: 6 }
-          - { type: normal, weight_kg: 75,   reps: 6 }
-          - { type: normal, weight_kg: 75,   reps: 6 }
-          - { type: normal, weight_kg: 75,   reps: 6 }
+          - { type: warmup, weight_kg: 57.5,   reps: 3 }
+          - { type: normal, weight_kg: 72.5,   reps: 6 }
+          - { type: normal, weight_kg: 72.5,   reps: 6 }
+          - { type: normal, weight_kg: 72.5,   reps: 6 }
+          - { type: normal, weight_kg: 72.5,   reps: 6 }
 
       - exercise_template_id: "79D0BB3A"
         name: "Bench Press (Barbell)"
-        notes: "B1 — Bench Press | SUPERSERIA z B2 | 3×8 @ 75 kg | RPE 8"
+        notes: "B1 — Bench Press | SUPERSERIA z B2 | 3×8 @ 72.5 kg | RPE 8"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 62.5, reps: 3 }
-          - { type: normal, weight_kg: 75,   reps: 8 }
-          - { type: normal, weight_kg: 75,   reps: 8 }
-          - { type: normal, weight_kg: 75,   reps: 8 }
+          - { type: warmup, weight_kg: 57.5, reps: 3 }
+          - { type: normal, weight_kg: 72.5,   reps: 8 }
+          - { type: normal, weight_kg: 72.5,   reps: 8 }
+          - { type: normal, weight_kg: 72.5,   reps: 8 }
 
       - exercise_template_id: "0393F233"
         name: "Seated Cable Row"
-        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 3×8 @ 65 kg"
+        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 3×8 @ 60 kg"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 30, reps: 10 }
-          - { type: warmup, weight_kg: 50, reps: 5 }
-          - { type: normal, weight_kg: 65, reps: 8 }
-          - { type: normal, weight_kg: 65, reps: 8 }
-          - { type: normal, weight_kg: 65, reps: 8 }
+          - { type: warmup, weight_kg: 47.5, reps: 5 }
+          - { type: normal, weight_kg: 60, reps: 8 }
+          - { type: normal, weight_kg: 60, reps: 8 }
+          - { type: normal, weight_kg: 60, reps: 8 }
 
       - exercise_template_id: "B9380898"
         name: "Dead Hang"
@@ -263,28 +263,28 @@ routines:
 
       - exercise_template_id: "2B4B7310"
         name: "Romanian Deadlift (Barbell)"
-        notes: "A — Romanian Deadlift | 3×8 @ 72.5 kg | RPE 8"
+        notes: "A — Romanian Deadlift | 3×8 @ 70 kg | RPE 8"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 60,   reps: 3 }
-          - { type: normal, weight_kg: 72.5, reps: 8 }
-          - { type: normal, weight_kg: 72.5, reps: 8 }
-          - { type: normal, weight_kg: 72.5, reps: 8 }
+          - { type: warmup, weight_kg: 55,   reps: 3 }
+          - { type: normal, weight_kg: 70, reps: 8 }
+          - { type: normal, weight_kg: 70, reps: 8 }
+          - { type: normal, weight_kg: 70, reps: 8 }
 
       - exercise_template_id: "7B8D84E8"
         name: "Overhead Press (Barbell)"
-        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 3×8 @ 52.5 kg | RPE 8"
+        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 3×8 @ 50 kg | RPE 8"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 30,   reps: 8 }
-          - { type: warmup, weight_kg: 45,   reps: 5 }
-          - { type: normal, weight_kg: 52.5, reps: 8 }
-          - { type: normal, weight_kg: 52.5, reps: 8 }
-          - { type: normal, weight_kg: 52.5, reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: normal, weight_kg: 50, reps: 8 }
+          - { type: normal, weight_kg: 50, reps: 8 }
+          - { type: normal, weight_kg: 50, reps: 8 }
 
       - exercise_template_id: "29083183"
         name: "Chin Up (BW)"
@@ -325,39 +325,39 @@ routines:
 
       - exercise_template_id: "07B38369"
         name: "Incline Bench Press (Dumbbell)"
-        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 3×8 @ 30 kg | ciężar per ramię"
+        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 3×8 @ 31.5 kg | ciężar per ramię"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 12, reps: 8 }
           - { type: warmup, weight_kg: 18, reps: 5 }
-          - { type: warmup, weight_kg: 22, reps: 3 }
-          - { type: normal, weight_kg: 30, reps: 8 }
-          - { type: normal, weight_kg: 30, reps: 8 }
-          - { type: normal, weight_kg: 30, reps: 8 }
+          - { type: warmup, weight_kg: 25.5, reps: 3 }
+          - { type: normal, weight_kg: 31.5, reps: 8 }
+          - { type: normal, weight_kg: 31.5, reps: 8 }
+          - { type: normal, weight_kg: 31.5, reps: 8 }
 
       - exercise_template_id: "55E6546F"
         name: "Barbell Row"
-        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 3×8 @ 60 kg"
+        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 3×8 @ 57.5 kg"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20, reps: 8 }
-          - { type: warmup, weight_kg: 40, reps: 5 }
-          - { type: warmup, weight_kg: 50, reps: 3 }
-          - { type: normal, weight_kg: 60, reps: 8 }
-          - { type: normal, weight_kg: 60, reps: 8 }
-          - { type: normal, weight_kg: 60, reps: 8 }
+          - { type: warmup, weight_kg: 37.5, reps: 5 }
+          - { type: warmup, weight_kg: 45, reps: 3 }
+          - { type: normal, weight_kg: 57.5, reps: 8 }
+          - { type: normal, weight_kg: 57.5, reps: 8 }
+          - { type: normal, weight_kg: 57.5, reps: 8 }
 
       - exercise_template_id: "6E6EE645"
         name: "Walking Lunges (Zakroki)"
-        notes: "B — Zakroki | 3×10 @ 20 kg"
+        notes: "B — Zakroki | 3×10 @ 27 kg"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 0,  reps: 5 }
-          - { type: normal, weight_kg: 20, reps: 10 }
-          - { type: normal, weight_kg: 20, reps: 10 }
-          - { type: normal, weight_kg: 20, reps: 10 }
+          - { type: normal, weight_kg: 27, reps: 10 }
+          - { type: normal, weight_kg: 27, reps: 10 }
+          - { type: normal, weight_kg: 27, reps: 10 }
 
       - exercise_template_id: "37FCC2BB"
         name: "Bicep Curl (Dumbbell)"
@@ -389,43 +389,43 @@ routines:
 
       - exercise_template_id: "D04AC939"
         name: "Low Bar Squat"
-        notes: "A — Low Bar Squat | 4×4 @ 80 kg | RPE 8"
+        notes: "A — Low Bar Squat | 4×4 @ 75 kg | RPE 8"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 55,   reps: 3 }
-          - { type: normal, weight_kg: 80,   reps: 4 }
-          - { type: normal, weight_kg: 80,   reps: 4 }
-          - { type: normal, weight_kg: 80,   reps: 4 }
-          - { type: normal, weight_kg: 80,   reps: 4 }
+          - { type: warmup, weight_kg: 57.5,   reps: 3 }
+          - { type: normal, weight_kg: 75,   reps: 4 }
+          - { type: normal, weight_kg: 75,   reps: 4 }
+          - { type: normal, weight_kg: 75,   reps: 4 }
+          - { type: normal, weight_kg: 75,   reps: 4 }
 
       - exercise_template_id: "79D0BB3A"
         name: "Bench Press (Barbell)"
-        notes: "B1 — Bench Press | SUPERSERIA z B2 | 4×6 @ 80 kg | RPE 9"
+        notes: "B1 — Bench Press | SUPERSERIA z B2 | 4×6 @ 75 kg | RPE 8"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 62.5, reps: 3 }
-          - { type: normal, weight_kg: 80,   reps: 6 }
-          - { type: normal, weight_kg: 80,   reps: 6 }
-          - { type: normal, weight_kg: 80,   reps: 6 }
-          - { type: normal, weight_kg: 80,   reps: 6 }
+          - { type: warmup, weight_kg: 57.5, reps: 3 }
+          - { type: normal, weight_kg: 75,   reps: 6 }
+          - { type: normal, weight_kg: 75,   reps: 6 }
+          - { type: normal, weight_kg: 75,   reps: 6 }
+          - { type: normal, weight_kg: 75,   reps: 6 }
 
       - exercise_template_id: "0393F233"
         name: "Seated Cable Row"
-        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 4×6 @ 67.5 kg"
+        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 4×6 @ 65 kg"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 30,   reps: 10 }
-          - { type: warmup, weight_kg: 50,   reps: 5 }
-          - { type: normal, weight_kg: 67.5, reps: 6 }
-          - { type: normal, weight_kg: 67.5, reps: 6 }
-          - { type: normal, weight_kg: 67.5, reps: 6 }
-          - { type: normal, weight_kg: 67.5, reps: 6 }
+          - { type: warmup, weight_kg: 47.5,   reps: 5 }
+          - { type: normal, weight_kg: 65, reps: 6 }
+          - { type: normal, weight_kg: 65, reps: 6 }
+          - { type: normal, weight_kg: 65, reps: 6 }
+          - { type: normal, weight_kg: 65, reps: 6 }
 
       - exercise_template_id: "B9380898"
         name: "Dead Hang"
@@ -444,30 +444,30 @@ routines:
 
       - exercise_template_id: "2B4B7310"
         name: "Romanian Deadlift (Barbell)"
-        notes: "A — Romanian Deadlift | 4×6 @ 77.5 kg | RPE 9"
+        notes: "A — Romanian Deadlift | 4×6 @ 72.5 kg | RPE 8"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 60,   reps: 3 }
-          - { type: normal, weight_kg: 77.5, reps: 6 }
-          - { type: normal, weight_kg: 77.5, reps: 6 }
-          - { type: normal, weight_kg: 77.5, reps: 6 }
-          - { type: normal, weight_kg: 77.5, reps: 6 }
+          - { type: warmup, weight_kg: 55,   reps: 3 }
+          - { type: normal, weight_kg: 72.5, reps: 6 }
+          - { type: normal, weight_kg: 72.5, reps: 6 }
+          - { type: normal, weight_kg: 72.5, reps: 6 }
+          - { type: normal, weight_kg: 72.5, reps: 6 }
 
       - exercise_template_id: "7B8D84E8"
         name: "Overhead Press (Barbell)"
-        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 4×6 @ 55 kg | RPE 9"
+        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 4×6 @ 52.5 kg | RPE 8"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20, reps: 8 }
           - { type: warmup, weight_kg: 30, reps: 8 }
-          - { type: warmup, weight_kg: 45, reps: 5 }
-          - { type: normal, weight_kg: 55, reps: 6 }
-          - { type: normal, weight_kg: 55, reps: 6 }
-          - { type: normal, weight_kg: 55, reps: 6 }
-          - { type: normal, weight_kg: 55, reps: 6 }
+          - { type: warmup, weight_kg: 40, reps: 5 }
+          - { type: normal, weight_kg: 52.5, reps: 6 }
+          - { type: normal, weight_kg: 52.5, reps: 6 }
+          - { type: normal, weight_kg: 52.5, reps: 6 }
+          - { type: normal, weight_kg: 52.5, reps: 6 }
 
       - exercise_template_id: "29083183"
         name: "Chin Up (BW)"
@@ -515,7 +515,7 @@ routines:
         sets:
           - { type: warmup, weight_kg: 12, reps: 8 }
           - { type: warmup, weight_kg: 18, reps: 5 }
-          - { type: warmup, weight_kg: 22, reps: 3 }
+          - { type: warmup, weight_kg: 25.5, reps: 3 }
           - { type: normal, weight_kg: 33, reps: 6 }
           - { type: normal, weight_kg: 33, reps: 6 }
           - { type: normal, weight_kg: 33, reps: 6 }
@@ -523,27 +523,27 @@ routines:
 
       - exercise_template_id: "55E6546F"
         name: "Barbell Row"
-        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 4×6 @ 62.5 kg"
+        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 4×6 @ 60 kg"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
-          - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 50,   reps: 3 }
-          - { type: normal, weight_kg: 62.5, reps: 6 }
-          - { type: normal, weight_kg: 62.5, reps: 6 }
-          - { type: normal, weight_kg: 62.5, reps: 6 }
-          - { type: normal, weight_kg: 62.5, reps: 6 }
+          - { type: warmup, weight_kg: 37.5,   reps: 5 }
+          - { type: warmup, weight_kg: 45,   reps: 3 }
+          - { type: normal, weight_kg: 60, reps: 6 }
+          - { type: normal, weight_kg: 60, reps: 6 }
+          - { type: normal, weight_kg: 60, reps: 6 }
+          - { type: normal, weight_kg: 60, reps: 6 }
 
       - exercise_template_id: "6E6EE645"
         name: "Walking Lunges (Zakroki)"
-        notes: "B — Zakroki | 3×9 @ 25 kg"
+        notes: "B — Zakroki | 3×9 @ 28.5 kg"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 0,  reps: 5 }
-          - { type: normal, weight_kg: 25, reps: 9 }
-          - { type: normal, weight_kg: 25, reps: 9 }
-          - { type: normal, weight_kg: 25, reps: 9 }
+          - { type: normal, weight_kg: 28.5, reps: 9 }
+          - { type: normal, weight_kg: 28.5, reps: 9 }
+          - { type: normal, weight_kg: 28.5, reps: 9 }
 
       - exercise_template_id: "37FCC2BB"
         name: "Bicep Curl (Dumbbell)"
@@ -575,43 +575,43 @@ routines:
 
       - exercise_template_id: "D04AC939"
         name: "Low Bar Squat"
-        notes: "A — Low Bar Squat | 4×3 @ 82.5 kg | RPE 9"
+        notes: "A — Low Bar Squat | 4×3 @ 80 kg | RPE 9"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 55,   reps: 3 }
-          - { type: normal, weight_kg: 82.5, reps: 3 }
-          - { type: normal, weight_kg: 82.5, reps: 3 }
-          - { type: normal, weight_kg: 82.5, reps: 3 }
-          - { type: normal, weight_kg: 82.5, reps: 3 }
+          - { type: warmup, weight_kg: 57.5,   reps: 3 }
+          - { type: normal, weight_kg: 80, reps: 3 }
+          - { type: normal, weight_kg: 80, reps: 3 }
+          - { type: normal, weight_kg: 80, reps: 3 }
+          - { type: normal, weight_kg: 80, reps: 3 }
 
       - exercise_template_id: "79D0BB3A"
         name: "Bench Press (Barbell)"
-        notes: "B1 — Bench Press | SUPERSERIA z B2 | 4×5 @ 82.5 kg | RPE 9"
+        notes: "B1 — Bench Press | SUPERSERIA z B2 | 4×5 @ 80 kg | RPE 9"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 40,   reps: 5 }
-          - { type: warmup, weight_kg: 62.5, reps: 3 }
-          - { type: normal, weight_kg: 82.5, reps: 5 }
-          - { type: normal, weight_kg: 82.5, reps: 5 }
-          - { type: normal, weight_kg: 82.5, reps: 5 }
-          - { type: normal, weight_kg: 82.5, reps: 5 }
+          - { type: warmup, weight_kg: 57.5, reps: 3 }
+          - { type: normal, weight_kg: 80, reps: 5 }
+          - { type: normal, weight_kg: 80, reps: 5 }
+          - { type: normal, weight_kg: 80, reps: 5 }
+          - { type: normal, weight_kg: 80, reps: 5 }
 
       - exercise_template_id: "0393F233"
         name: "Seated Cable Row"
-        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 4×5 @ 70 kg"
+        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 4×5 @ 67.5 kg"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 30, reps: 10 }
-          - { type: warmup, weight_kg: 50, reps: 5 }
-          - { type: normal, weight_kg: 70, reps: 5 }
-          - { type: normal, weight_kg: 70, reps: 5 }
-          - { type: normal, weight_kg: 70, reps: 5 }
-          - { type: normal, weight_kg: 70, reps: 5 }
+          - { type: warmup, weight_kg: 47.5, reps: 5 }
+          - { type: normal, weight_kg: 67.5, reps: 5 }
+          - { type: normal, weight_kg: 67.5, reps: 5 }
+          - { type: normal, weight_kg: 67.5, reps: 5 }
+          - { type: normal, weight_kg: 67.5, reps: 5 }
 
       - exercise_template_id: "B9380898"
         name: "Dead Hang"
@@ -630,30 +630,30 @@ routines:
 
       - exercise_template_id: "2B4B7310"
         name: "Romanian Deadlift (Barbell)"
-        notes: "A — Romanian Deadlift | 4×5 @ 80 kg | RPE 9"
+        notes: "A — Romanian Deadlift | 4×5 @ 77.5 kg | RPE 9"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 20, reps: 8 }
           - { type: warmup, weight_kg: 40, reps: 5 }
-          - { type: warmup, weight_kg: 60, reps: 3 }
-          - { type: normal, weight_kg: 80, reps: 5 }
-          - { type: normal, weight_kg: 80, reps: 5 }
-          - { type: normal, weight_kg: 80, reps: 5 }
-          - { type: normal, weight_kg: 80, reps: 5 }
+          - { type: warmup, weight_kg: 55, reps: 3 }
+          - { type: normal, weight_kg: 77.5, reps: 5 }
+          - { type: normal, weight_kg: 77.5, reps: 5 }
+          - { type: normal, weight_kg: 77.5, reps: 5 }
+          - { type: normal, weight_kg: 77.5, reps: 5 }
 
       - exercise_template_id: "7B8D84E8"
         name: "Overhead Press (Barbell)"
-        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 4×5 @ 57.5 kg | RPE 9"
+        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 4×5 @ 55 kg | RPE 9"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20,   reps: 8 }
           - { type: warmup, weight_kg: 30,   reps: 8 }
-          - { type: warmup, weight_kg: 45,   reps: 5 }
-          - { type: normal, weight_kg: 57.5, reps: 5 }
-          - { type: normal, weight_kg: 57.5, reps: 5 }
-          - { type: normal, weight_kg: 57.5, reps: 5 }
-          - { type: normal, weight_kg: 57.5, reps: 5 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: normal, weight_kg: 55, reps: 5 }
+          - { type: normal, weight_kg: 55, reps: 5 }
+          - { type: normal, weight_kg: 55, reps: 5 }
+          - { type: normal, weight_kg: 55, reps: 5 }
 
       - exercise_template_id: "29083183"
         name: "Chin Up (BW)"
@@ -695,41 +695,41 @@ routines:
 
       - exercise_template_id: "07B38369"
         name: "Incline Bench Press (Dumbbell)"
-        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 4×5 @ 36 kg | ciężar per ramię"
+        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 4×5 @ 34.5 kg | ciężar per ramię"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 12, reps: 8 }
           - { type: warmup, weight_kg: 18, reps: 5 }
-          - { type: warmup, weight_kg: 22, reps: 3 }
-          - { type: normal, weight_kg: 36, reps: 5 }
-          - { type: normal, weight_kg: 36, reps: 5 }
-          - { type: normal, weight_kg: 36, reps: 5 }
-          - { type: normal, weight_kg: 36, reps: 5 }
+          - { type: warmup, weight_kg: 25.5, reps: 3 }
+          - { type: normal, weight_kg: 34.5, reps: 5 }
+          - { type: normal, weight_kg: 34.5, reps: 5 }
+          - { type: normal, weight_kg: 34.5, reps: 5 }
+          - { type: normal, weight_kg: 34.5, reps: 5 }
 
       - exercise_template_id: "55E6546F"
         name: "Barbell Row"
-        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 4×5 @ 65 kg"
+        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 4×5 @ 62.5 kg"
         superset_id: 1
         rest_seconds: 90
         sets:
           - { type: warmup, weight_kg: 20, reps: 8 }
-          - { type: warmup, weight_kg: 40, reps: 5 }
-          - { type: warmup, weight_kg: 50, reps: 3 }
-          - { type: normal, weight_kg: 65, reps: 5 }
-          - { type: normal, weight_kg: 65, reps: 5 }
-          - { type: normal, weight_kg: 65, reps: 5 }
-          - { type: normal, weight_kg: 65, reps: 5 }
+          - { type: warmup, weight_kg: 37.5, reps: 5 }
+          - { type: warmup, weight_kg: 45, reps: 3 }
+          - { type: normal, weight_kg: 62.5, reps: 5 }
+          - { type: normal, weight_kg: 62.5, reps: 5 }
+          - { type: normal, weight_kg: 62.5, reps: 5 }
+          - { type: normal, weight_kg: 62.5, reps: 5 }
 
       - exercise_template_id: "6E6EE645"
         name: "Walking Lunges (Zakroki)"
-        notes: "B — Zakroki | 3×8 @ 30 kg"
+        notes: "B — Zakroki | 3×8 @ 28.5 kg"
         rest_seconds: 180
         sets:
           - { type: warmup, weight_kg: 0,  reps: 5 }
-          - { type: normal, weight_kg: 30, reps: 8 }
-          - { type: normal, weight_kg: 30, reps: 8 }
-          - { type: normal, weight_kg: 30, reps: 8 }
+          - { type: normal, weight_kg: 28.5, reps: 8 }
+          - { type: normal, weight_kg: 28.5, reps: 8 }
+          - { type: normal, weight_kg: 28.5, reps: 8 }
 
       - exercise_template_id: "37FCC2BB"
         name: "Bicep Curl (Dumbbell)"
