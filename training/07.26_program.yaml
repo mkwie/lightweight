@@ -1,0 +1,752 @@
+# 07.26_program.yaml — Blok treningowy Lipiec 2026 (4 tygodnie)
+# Walidacja: .\validate-program.ps1 -ProgramFile .\07.26_program.yaml
+# Mapuje 1:1 na Hevy API (create-routine / update-routine)
+
+block:
+  name: "07.26"
+  created: "2026-07-01"
+  weeks: 4
+  previous_block: "06.26"
+  hevy_folder_id: 3126209
+  changes:
+    - "Dzień 2 pull: Lat Pulldown → Chin Up (BW)"
+    - "Dzień 3 push: Incline Bench Press (sztanga) → Incline DB Press (hantle, per ramię)"
+    - "Dzień 3 pull: Dumbbell Row → Barbell Row"
+    - "Dzień 3 nogi: High Bar Squat → Zakroki (Walking Lunges)"
+    - "Akcesoria D1: Bird Dog → Dead Hang"
+    - "Akcesoria D3: Hip Flexion + Glute Bridge → Bicep Curl + Triceps Pushdown"
+
+routines:
+
+  # ── TYDZIEŃ 1 ──────────────────────────────────────────────────────────────
+
+  - week: 1
+    day: 1
+    title: "W1_1"
+    hevy_routine_id: "6cdbe31b-fd1b-4cdf-8172-181701959748"
+    exercises:
+
+      - exercise_template_id: "D04AC939"
+        name: "Low Bar Squat"
+        notes: "A — Low Bar Squat | 3×8 @ 72.5 kg | RPE 7"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 55,   reps: 3 }
+          - { type: normal, weight_kg: 72.5, reps: 8 }
+          - { type: normal, weight_kg: 72.5, reps: 8 }
+          - { type: normal, weight_kg: 72.5, reps: 8 }
+
+      - exercise_template_id: "79D0BB3A"
+        name: "Bench Press (Barbell)"
+        notes: "B1 — Bench Press | SUPERSERIA z B2 | 3×10 @ 72.5 kg | RPE 7"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 62.5, reps: 3 }
+          - { type: normal, weight_kg: 72.5, reps: 10 }
+          - { type: normal, weight_kg: 72.5, reps: 10 }
+          - { type: normal, weight_kg: 72.5, reps: 10 }
+
+      - exercise_template_id: "0393F233"
+        name: "Seated Cable Row"
+        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 3×10 @ 60 kg"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 30, reps: 10 }
+          - { type: warmup, weight_kg: 50, reps: 5 }
+          - { type: normal, weight_kg: 60, reps: 10 }
+          - { type: normal, weight_kg: 60, reps: 10 }
+          - { type: normal, weight_kg: 60, reps: 10 }
+
+      # Dead Hang: ćwiczenie czasowe — reps: 1 oznacza 1 powtórzenie trzymania
+      - exercise_template_id: "B9380898"
+        name: "Dead Hang"
+        notes: "C — Dead Hang | 3×max (cel 30–60s/serię) | przerwy 90s"
+        rest_seconds: 90
+        sets:
+          - { type: normal, duration_seconds: 30 }
+          - { type: normal, duration_seconds: 30 }
+          - { type: normal, duration_seconds: 30 }
+
+  - week: 1
+    day: 2
+    title: "W1_2"
+    hevy_routine_id: "0d707fe5-ac2c-4ed4-806f-ed3be77f7829"
+    exercises:
+
+      - exercise_template_id: "2B4B7310"
+        name: "Romanian Deadlift (Barbell)"
+        notes: "A — Romanian Deadlift | 3×10 @ 70 kg | RPE 7"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 20, reps: 8 }
+          - { type: warmup, weight_kg: 40, reps: 5 }
+          - { type: warmup, weight_kg: 60, reps: 3 }
+          - { type: normal, weight_kg: 70, reps: 10 }
+          - { type: normal, weight_kg: 70, reps: 10 }
+          - { type: normal, weight_kg: 70, reps: 10 }
+
+      - exercise_template_id: "7B8D84E8"
+        name: "Overhead Press (Barbell)"
+        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 3×10 @ 50 kg | RPE 7"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20, reps: 8 }
+          - { type: warmup, weight_kg: 30, reps: 8 }
+          - { type: warmup, weight_kg: 45, reps: 5 }
+          - { type: normal, weight_kg: 50, reps: 10 }
+          - { type: normal, weight_kg: 50, reps: 10 }
+          - { type: normal, weight_kg: 50, reps: 10 }
+
+      # Chin Up BW: warmup = 3 negatywy (kontrolowane opuszczanie)
+      - exercise_template_id: "29083183"
+        name: "Chin Up (BW)"
+        notes: "B2 — Chin Up | SUPERSERIA z B1 | 3×10 @ BW | kalibracja T1"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 0, reps: 3 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+
+      - exercise_template_id: "DCF3B31B"
+        name: "Crunch (Spięcia brzucha)"
+        notes: "C1 — Spięcia brzucha | SUPERSERIA z C2 | 3×10 @ BW"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+
+      - exercise_template_id: "05be3aca-4678-427a-b93f-7d63d1388376"
+        name: "Powell Raise"
+        notes: "C2 — Powell Raise | SUPERSERIA z C1 | 3×10 @ 4 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 4, reps: 10 }
+          - { type: normal, weight_kg: 4, reps: 10 }
+          - { type: normal, weight_kg: 4, reps: 10 }
+
+  - week: 1
+    day: 3
+    title: "W1_3"
+    hevy_routine_id: "d7de3ffa-a4f8-4381-8182-3f63abdc6bd6"
+    exercises:
+
+      # Dzień 3: A1+A2 jako superseria, B solo, C1+C2 jako superseria
+      - exercise_template_id: "07B38369"
+        name: "Incline Bench Press (Dumbbell)"
+        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 3×10 @ 26 kg | kalibracja | ciężar per ramię"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 12, reps: 8 }
+          - { type: warmup, weight_kg: 18, reps: 5 }
+          - { type: warmup, weight_kg: 22, reps: 3 }
+          - { type: normal, weight_kg: 26, reps: 10 }
+          - { type: normal, weight_kg: 26, reps: 10 }
+          - { type: normal, weight_kg: 26, reps: 10 }
+
+      - exercise_template_id: "55E6546F"
+        name: "Barbell Row"
+        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 3×10 @ 57.5 kg | kalibracja"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 50,   reps: 3 }
+          - { type: normal, weight_kg: 57.5, reps: 10 }
+          - { type: normal, weight_kg: 57.5, reps: 10 }
+          - { type: normal, weight_kg: 57.5, reps: 10 }
+
+      # Zakroki T1 = BW kalibracja; od T2 ze sztangą (6E6EE645)
+      - exercise_template_id: "32HKJ34K"
+        name: "Walking Lunges (Zakroki)"
+        notes: "B — Zakroki | 3×12 @ BW | kalibracja T1"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 0, reps: 5 }
+          - { type: normal, weight_kg: 0, reps: 12 }
+          - { type: normal, weight_kg: 0, reps: 12 }
+          - { type: normal, weight_kg: 0, reps: 12 }
+
+      - exercise_template_id: "37FCC2BB"
+        name: "Bicep Curl (Dumbbell)"
+        notes: "C1 — Bicep Curl | SUPERSERIA z C2 | 3×10 @ 8.5 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+
+      - exercise_template_id: "93A552C6"
+        name: "Triceps Pushdown"
+        notes: "C2 — Triceps Pushdown | SUPERSERIA z C1 | 3×10 @ 30 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+
+  # ── TYDZIEŃ 2 ──────────────────────────────────────────────────────────────
+
+  - week: 2
+    day: 1
+    title: "W2_1"
+    hevy_routine_id: "08fb1823-e3d8-465d-b534-3c1a6360c015"
+    exercises:
+
+      - exercise_template_id: "D04AC939"
+        name: "Low Bar Squat"
+        notes: "A — Low Bar Squat | 4×6 @ 75 kg | RPE 8"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 55,   reps: 3 }
+          - { type: normal, weight_kg: 75,   reps: 6 }
+          - { type: normal, weight_kg: 75,   reps: 6 }
+          - { type: normal, weight_kg: 75,   reps: 6 }
+          - { type: normal, weight_kg: 75,   reps: 6 }
+
+      - exercise_template_id: "79D0BB3A"
+        name: "Bench Press (Barbell)"
+        notes: "B1 — Bench Press | SUPERSERIA z B2 | 3×8 @ 75 kg | RPE 8"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 62.5, reps: 3 }
+          - { type: normal, weight_kg: 75,   reps: 8 }
+          - { type: normal, weight_kg: 75,   reps: 8 }
+          - { type: normal, weight_kg: 75,   reps: 8 }
+
+      - exercise_template_id: "0393F233"
+        name: "Seated Cable Row"
+        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 3×8 @ 65 kg"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 30, reps: 10 }
+          - { type: warmup, weight_kg: 50, reps: 5 }
+          - { type: normal, weight_kg: 65, reps: 8 }
+          - { type: normal, weight_kg: 65, reps: 8 }
+          - { type: normal, weight_kg: 65, reps: 8 }
+
+      - exercise_template_id: "B9380898"
+        name: "Dead Hang"
+        notes: "C — Dead Hang | 3×max (cel 30–60s/serię)"
+        rest_seconds: 90
+        sets:
+          - { type: normal, duration_seconds: 30 }
+          - { type: normal, duration_seconds: 30 }
+          - { type: normal, duration_seconds: 30 }
+
+  - week: 2
+    day: 2
+    title: "W2_2"
+    hevy_routine_id: "699cd051-73dd-4cbd-9dfd-84f2bc926c38"
+    exercises:
+
+      - exercise_template_id: "2B4B7310"
+        name: "Romanian Deadlift (Barbell)"
+        notes: "A — Romanian Deadlift | 3×8 @ 72.5 kg | RPE 8"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 60,   reps: 3 }
+          - { type: normal, weight_kg: 72.5, reps: 8 }
+          - { type: normal, weight_kg: 72.5, reps: 8 }
+          - { type: normal, weight_kg: 72.5, reps: 8 }
+
+      - exercise_template_id: "7B8D84E8"
+        name: "Overhead Press (Barbell)"
+        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 3×8 @ 52.5 kg | RPE 8"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 30,   reps: 8 }
+          - { type: warmup, weight_kg: 45,   reps: 5 }
+          - { type: normal, weight_kg: 52.5, reps: 8 }
+          - { type: normal, weight_kg: 52.5, reps: 8 }
+          - { type: normal, weight_kg: 52.5, reps: 8 }
+
+      - exercise_template_id: "29083183"
+        name: "Chin Up (BW)"
+        notes: "B2 — Chin Up | SUPERSERIA z B1 | 3×8 @ BW"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 0, reps: 3 }
+          - { type: normal, weight_kg: 0, reps: 8 }
+          - { type: normal, weight_kg: 0, reps: 8 }
+          - { type: normal, weight_kg: 0, reps: 8 }
+
+      - exercise_template_id: "DCF3B31B"
+        name: "Crunch (Spięcia brzucha)"
+        notes: "C1 — Spięcia brzucha | SUPERSERIA z C2 | 3×10 @ BW"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+
+      - exercise_template_id: "05be3aca-4678-427a-b93f-7d63d1388376"
+        name: "Powell Raise"
+        notes: "C2 — Powell Raise | SUPERSERIA z C1 | 3×10 @ 4 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 4, reps: 10 }
+          - { type: normal, weight_kg: 4, reps: 10 }
+          - { type: normal, weight_kg: 4, reps: 10 }
+
+  - week: 2
+    day: 3
+    title: "W2_3"
+    hevy_routine_id: "c6ce8abd-ac08-4aad-8943-d62524f9f757"
+    exercises:
+
+      - exercise_template_id: "07B38369"
+        name: "Incline Bench Press (Dumbbell)"
+        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 3×8 @ 30 kg | ciężar per ramię"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 12, reps: 8 }
+          - { type: warmup, weight_kg: 18, reps: 5 }
+          - { type: warmup, weight_kg: 22, reps: 3 }
+          - { type: normal, weight_kg: 30, reps: 8 }
+          - { type: normal, weight_kg: 30, reps: 8 }
+          - { type: normal, weight_kg: 30, reps: 8 }
+
+      - exercise_template_id: "55E6546F"
+        name: "Barbell Row"
+        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 3×8 @ 60 kg"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20, reps: 8 }
+          - { type: warmup, weight_kg: 40, reps: 5 }
+          - { type: warmup, weight_kg: 50, reps: 3 }
+          - { type: normal, weight_kg: 60, reps: 8 }
+          - { type: normal, weight_kg: 60, reps: 8 }
+          - { type: normal, weight_kg: 60, reps: 8 }
+
+      - exercise_template_id: "6E6EE645"
+        name: "Walking Lunges (Zakroki)"
+        notes: "B — Zakroki | 3×10 @ 20 kg"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 0,  reps: 5 }
+          - { type: normal, weight_kg: 20, reps: 10 }
+          - { type: normal, weight_kg: 20, reps: 10 }
+          - { type: normal, weight_kg: 20, reps: 10 }
+
+      - exercise_template_id: "37FCC2BB"
+        name: "Bicep Curl (Dumbbell)"
+        notes: "C1 — Bicep Curl | SUPERSERIA z C2 | 3×10 @ 8.5 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+
+      - exercise_template_id: "93A552C6"
+        name: "Triceps Pushdown"
+        notes: "C2 — Triceps Pushdown | SUPERSERIA z C1 | 3×10 @ 30 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+
+  # ── TYDZIEŃ 3 ──────────────────────────────────────────────────────────────
+
+  - week: 3
+    day: 1
+    title: "W3_1"
+    hevy_routine_id: "ad4a4368-e5c4-4c34-81a0-8e232a3fdef3"
+    exercises:
+
+      - exercise_template_id: "D04AC939"
+        name: "Low Bar Squat"
+        notes: "A — Low Bar Squat | 4×4 @ 80 kg | RPE 8"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 55,   reps: 3 }
+          - { type: normal, weight_kg: 80,   reps: 4 }
+          - { type: normal, weight_kg: 80,   reps: 4 }
+          - { type: normal, weight_kg: 80,   reps: 4 }
+          - { type: normal, weight_kg: 80,   reps: 4 }
+
+      - exercise_template_id: "79D0BB3A"
+        name: "Bench Press (Barbell)"
+        notes: "B1 — Bench Press | SUPERSERIA z B2 | 4×6 @ 80 kg | RPE 9"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 62.5, reps: 3 }
+          - { type: normal, weight_kg: 80,   reps: 6 }
+          - { type: normal, weight_kg: 80,   reps: 6 }
+          - { type: normal, weight_kg: 80,   reps: 6 }
+          - { type: normal, weight_kg: 80,   reps: 6 }
+
+      - exercise_template_id: "0393F233"
+        name: "Seated Cable Row"
+        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 4×6 @ 67.5 kg"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 30,   reps: 10 }
+          - { type: warmup, weight_kg: 50,   reps: 5 }
+          - { type: normal, weight_kg: 67.5, reps: 6 }
+          - { type: normal, weight_kg: 67.5, reps: 6 }
+          - { type: normal, weight_kg: 67.5, reps: 6 }
+          - { type: normal, weight_kg: 67.5, reps: 6 }
+
+      - exercise_template_id: "B9380898"
+        name: "Dead Hang"
+        notes: "C — Dead Hang | 3×max (cel 30–60s/serię)"
+        rest_seconds: 90
+        sets:
+          - { type: normal, duration_seconds: 30 }
+          - { type: normal, duration_seconds: 30 }
+          - { type: normal, duration_seconds: 30 }
+
+  - week: 3
+    day: 2
+    title: "W3_2"
+    hevy_routine_id: "ff7f3b05-e17e-4fc5-96c7-33bf28808329"
+    exercises:
+
+      - exercise_template_id: "2B4B7310"
+        name: "Romanian Deadlift (Barbell)"
+        notes: "A — Romanian Deadlift | 4×6 @ 77.5 kg | RPE 9"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 60,   reps: 3 }
+          - { type: normal, weight_kg: 77.5, reps: 6 }
+          - { type: normal, weight_kg: 77.5, reps: 6 }
+          - { type: normal, weight_kg: 77.5, reps: 6 }
+          - { type: normal, weight_kg: 77.5, reps: 6 }
+
+      - exercise_template_id: "7B8D84E8"
+        name: "Overhead Press (Barbell)"
+        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 4×6 @ 55 kg | RPE 9"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20, reps: 8 }
+          - { type: warmup, weight_kg: 30, reps: 8 }
+          - { type: warmup, weight_kg: 45, reps: 5 }
+          - { type: normal, weight_kg: 55, reps: 6 }
+          - { type: normal, weight_kg: 55, reps: 6 }
+          - { type: normal, weight_kg: 55, reps: 6 }
+          - { type: normal, weight_kg: 55, reps: 6 }
+
+      - exercise_template_id: "29083183"
+        name: "Chin Up (BW)"
+        notes: "B2 — Chin Up | SUPERSERIA z B1 | 4×6 @ BW"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 0, reps: 3 }
+          - { type: normal, weight_kg: 0, reps: 6 }
+          - { type: normal, weight_kg: 0, reps: 6 }
+          - { type: normal, weight_kg: 0, reps: 6 }
+          - { type: normal, weight_kg: 0, reps: 6 }
+
+      - exercise_template_id: "DCF3B31B"
+        name: "Crunch (Spięcia brzucha)"
+        notes: "C1 — Spięcia brzucha | SUPERSERIA z C2 | 3×10 @ BW"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+
+      - exercise_template_id: "05be3aca-4678-427a-b93f-7d63d1388376"
+        name: "Powell Raise"
+        notes: "C2 — Powell Raise | SUPERSERIA z C1 | 3×10 @ 4 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 4, reps: 10 }
+          - { type: normal, weight_kg: 4, reps: 10 }
+          - { type: normal, weight_kg: 4, reps: 10 }
+
+  - week: 3
+    day: 3
+    title: "W3_3"
+    hevy_routine_id: "56add405-b252-4820-85c2-0ee7540bae65"
+    exercises:
+
+      - exercise_template_id: "07B38369"
+        name: "Incline Bench Press (Dumbbell)"
+        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 4×6 @ 33 kg | ciężar per ramię"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 12, reps: 8 }
+          - { type: warmup, weight_kg: 18, reps: 5 }
+          - { type: warmup, weight_kg: 22, reps: 3 }
+          - { type: normal, weight_kg: 33, reps: 6 }
+          - { type: normal, weight_kg: 33, reps: 6 }
+          - { type: normal, weight_kg: 33, reps: 6 }
+          - { type: normal, weight_kg: 33, reps: 6 }
+
+      - exercise_template_id: "55E6546F"
+        name: "Barbell Row"
+        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 4×6 @ 62.5 kg"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 50,   reps: 3 }
+          - { type: normal, weight_kg: 62.5, reps: 6 }
+          - { type: normal, weight_kg: 62.5, reps: 6 }
+          - { type: normal, weight_kg: 62.5, reps: 6 }
+          - { type: normal, weight_kg: 62.5, reps: 6 }
+
+      - exercise_template_id: "6E6EE645"
+        name: "Walking Lunges (Zakroki)"
+        notes: "B — Zakroki | 3×9 @ 25 kg"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 0,  reps: 5 }
+          - { type: normal, weight_kg: 25, reps: 9 }
+          - { type: normal, weight_kg: 25, reps: 9 }
+          - { type: normal, weight_kg: 25, reps: 9 }
+
+      - exercise_template_id: "37FCC2BB"
+        name: "Bicep Curl (Dumbbell)"
+        notes: "C1 — Bicep Curl | SUPERSERIA z C2 | 3×10 @ 8.5 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+
+      - exercise_template_id: "93A552C6"
+        name: "Triceps Pushdown"
+        notes: "C2 — Triceps Pushdown | SUPERSERIA z C1 | 3×10 @ 30 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+
+  # ── TYDZIEŃ 4 ──────────────────────────────────────────────────────────────
+
+  - week: 4
+    day: 1
+    title: "W4_1"
+    hevy_routine_id: "04a2b784-a151-4bab-93e3-654052bba75a"
+    exercises:
+
+      - exercise_template_id: "D04AC939"
+        name: "Low Bar Squat"
+        notes: "A — Low Bar Squat | 4×3 @ 82.5 kg | RPE 9"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 55,   reps: 3 }
+          - { type: normal, weight_kg: 82.5, reps: 3 }
+          - { type: normal, weight_kg: 82.5, reps: 3 }
+          - { type: normal, weight_kg: 82.5, reps: 3 }
+          - { type: normal, weight_kg: 82.5, reps: 3 }
+
+      - exercise_template_id: "79D0BB3A"
+        name: "Bench Press (Barbell)"
+        notes: "B1 — Bench Press | SUPERSERIA z B2 | 4×5 @ 82.5 kg | RPE 9"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 40,   reps: 5 }
+          - { type: warmup, weight_kg: 62.5, reps: 3 }
+          - { type: normal, weight_kg: 82.5, reps: 5 }
+          - { type: normal, weight_kg: 82.5, reps: 5 }
+          - { type: normal, weight_kg: 82.5, reps: 5 }
+          - { type: normal, weight_kg: 82.5, reps: 5 }
+
+      - exercise_template_id: "0393F233"
+        name: "Seated Cable Row"
+        notes: "B2 — Seated Cable Row | SUPERSERIA z B1 | 4×5 @ 70 kg"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 30, reps: 10 }
+          - { type: warmup, weight_kg: 50, reps: 5 }
+          - { type: normal, weight_kg: 70, reps: 5 }
+          - { type: normal, weight_kg: 70, reps: 5 }
+          - { type: normal, weight_kg: 70, reps: 5 }
+          - { type: normal, weight_kg: 70, reps: 5 }
+
+      - exercise_template_id: "B9380898"
+        name: "Dead Hang"
+        notes: "C — Dead Hang | 3×max (cel 30–60s/serię)"
+        rest_seconds: 90
+        sets:
+          - { type: normal, duration_seconds: 30 }
+          - { type: normal, duration_seconds: 30 }
+          - { type: normal, duration_seconds: 30 }
+
+  - week: 4
+    day: 2
+    title: "W4_2"
+    hevy_routine_id: "1ef6e469-3700-4101-acab-852f64e1c919"
+    exercises:
+
+      - exercise_template_id: "2B4B7310"
+        name: "Romanian Deadlift (Barbell)"
+        notes: "A — Romanian Deadlift | 4×5 @ 80 kg | RPE 9"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 20, reps: 8 }
+          - { type: warmup, weight_kg: 40, reps: 5 }
+          - { type: warmup, weight_kg: 60, reps: 3 }
+          - { type: normal, weight_kg: 80, reps: 5 }
+          - { type: normal, weight_kg: 80, reps: 5 }
+          - { type: normal, weight_kg: 80, reps: 5 }
+          - { type: normal, weight_kg: 80, reps: 5 }
+
+      - exercise_template_id: "7B8D84E8"
+        name: "Overhead Press (Barbell)"
+        notes: "B1 — Overhead Press | SUPERSERIA z B2 | 4×5 @ 57.5 kg | RPE 9"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20,   reps: 8 }
+          - { type: warmup, weight_kg: 30,   reps: 8 }
+          - { type: warmup, weight_kg: 45,   reps: 5 }
+          - { type: normal, weight_kg: 57.5, reps: 5 }
+          - { type: normal, weight_kg: 57.5, reps: 5 }
+          - { type: normal, weight_kg: 57.5, reps: 5 }
+          - { type: normal, weight_kg: 57.5, reps: 5 }
+
+      - exercise_template_id: "29083183"
+        name: "Chin Up (BW)"
+        notes: "B2 — Chin Up | SUPERSERIA z B1 | 4×5 @ BW"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 0, reps: 3 }
+          - { type: normal, weight_kg: 0, reps: 5 }
+          - { type: normal, weight_kg: 0, reps: 5 }
+          - { type: normal, weight_kg: 0, reps: 5 }
+          - { type: normal, weight_kg: 0, reps: 5 }
+
+      - exercise_template_id: "DCF3B31B"
+        name: "Crunch (Spięcia brzucha)"
+        notes: "C1 — Spięcia brzucha | SUPERSERIA z C2 | 3×10 @ BW"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+          - { type: normal, weight_kg: 0, reps: 10 }
+
+      - exercise_template_id: "05be3aca-4678-427a-b93f-7d63d1388376"
+        name: "Powell Raise"
+        notes: "C2 — Powell Raise | SUPERSERIA z C1 | 3×10 @ 4 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 4, reps: 10 }
+          - { type: normal, weight_kg: 4, reps: 10 }
+          - { type: normal, weight_kg: 4, reps: 10 }
+
+  - week: 4
+    day: 3
+    title: "W4_3"
+    hevy_routine_id: "fb56522a-1300-4e9b-8ed5-7990a64a9de8"
+    exercises:
+
+      - exercise_template_id: "07B38369"
+        name: "Incline Bench Press (Dumbbell)"
+        notes: "A1 — Incline DB Press | SUPERSERIA z A2 | 4×5 @ 36 kg | ciężar per ramię"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 12, reps: 8 }
+          - { type: warmup, weight_kg: 18, reps: 5 }
+          - { type: warmup, weight_kg: 22, reps: 3 }
+          - { type: normal, weight_kg: 36, reps: 5 }
+          - { type: normal, weight_kg: 36, reps: 5 }
+          - { type: normal, weight_kg: 36, reps: 5 }
+          - { type: normal, weight_kg: 36, reps: 5 }
+
+      - exercise_template_id: "55E6546F"
+        name: "Barbell Row"
+        notes: "A2 — Barbell Row | SUPERSERIA z A1 | 4×5 @ 65 kg"
+        superset_id: 1
+        rest_seconds: 90
+        sets:
+          - { type: warmup, weight_kg: 20, reps: 8 }
+          - { type: warmup, weight_kg: 40, reps: 5 }
+          - { type: warmup, weight_kg: 50, reps: 3 }
+          - { type: normal, weight_kg: 65, reps: 5 }
+          - { type: normal, weight_kg: 65, reps: 5 }
+          - { type: normal, weight_kg: 65, reps: 5 }
+          - { type: normal, weight_kg: 65, reps: 5 }
+
+      - exercise_template_id: "6E6EE645"
+        name: "Walking Lunges (Zakroki)"
+        notes: "B — Zakroki | 3×8 @ 30 kg"
+        rest_seconds: 180
+        sets:
+          - { type: warmup, weight_kg: 0,  reps: 5 }
+          - { type: normal, weight_kg: 30, reps: 8 }
+          - { type: normal, weight_kg: 30, reps: 8 }
+          - { type: normal, weight_kg: 30, reps: 8 }
+
+      - exercise_template_id: "37FCC2BB"
+        name: "Bicep Curl (Dumbbell)"
+        notes: "C1 — Bicep Curl | SUPERSERIA z C2 | 3×10 @ 8.5 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+          - { type: normal, weight_kg: 8.5, reps: 10 }
+
+      - exercise_template_id: "93A552C6"
+        name: "Triceps Pushdown"
+        notes: "C2 — Triceps Pushdown | SUPERSERIA z C1 | 3×10 @ 30 kg"
+        superset_id: 2
+        rest_seconds: 60
+        sets:
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }
+          - { type: normal, weight_kg: 30, reps: 10 }

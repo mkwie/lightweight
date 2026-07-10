@@ -84,54 +84,75 @@ Bazując na analizie powyżej, odpowiedz na poniższe pytania:
 
 ## KROK 4 — Wygeneruj nowy program
 
-Na podstawie analizy i odpowiedzi użytkownika stwórz plik `training/${input:name}_program.md`.
+Na podstawie analizy i odpowiedzi użytkownika stwórz plik `training/${input:name}_program.yaml`.
+
+### Struktura pliku
+
+Użyj [training/_program_template.yaml](../../training/_program_template.yaml) jako wzorca.  
+Schemat walidacji: [training/program.schema.json](../../training/program.schema.json).
+
+Plik zawiera pole `block` (metadane) oraz `routines[]` — **jedna rutyna = jeden trening** (dzień × tydzień).
+Blok ${input:weeks}-tygodniowy = 3 dni × ${input:weeks} tygodni = **${input:weeks}×3 rutyn**.
+
+Każda rutyna ma pole `title` w formacie `"Wtydzień_dzień"` np. `"W1_1"`, `"W1_2"`, `"W1_3"`, `"W2_1"` itd.
 
 ### Zasady budowania programu
 
-**Struktura każdego dnia:**
-1. **A** — jedno ćwiczenie złożone na nogi (SQUAT lub HINGE)
-2. **B1 + B2** — superseria PUSH + PULL (horyzontalne LUB wertykalne)
-3. **C** — 1–2 ćwiczenia accessory (3 × 10, bez progresji)
+**Struktura każdego dnia (kolejność ćwiczeń):**
+1. **A** — jedno ćwiczenie złożone na nogi (SQUAT lub HINGE), `superset_id: null`
+2. **B1 + B2** — superseria PUSH + PULL: oba mają **ten sam** `superset_id: 1` (int)
+3. **C** — 1–2 ćwiczenia accessory, `superset_id: null` (lub `2` jeśli para)
 
 **Rotacja wzorców przez 3 dni:**
 - Dzień 1: Squat (Low Bar lub High Bar) + Bench Press / Cable Row
 - Dzień 2: Hinge (RDL) + Overhead Press / Lat Pulldown
 - Dzień 3: Squat (drugi wariant) + Incline Press / Pull alternatywny
 
+**Pola ćwiczenia (`exercise_template_id`):**
+- Pobierz `Hevy ID` z [training/reps.md](../../training/reps.md)
+- `name` — tylko dla czytelności YAML, nie wysyłane do API
+- `notes` — format: `"A — Nazwa | N×M @ X kg | RPE Y"` lub `"B1 — Nazwa | SUPERSERIA z B2 | ..."`
+- `rest_seconds` — compound solo (A): **180s**, superseria (B1/B2, A1/A2): **90s**, accessory w superserii (C1/C2): **60s**
+
 **Progresja liniowa (ćwiczenia złożone):**
-- Nowy ciężar to jeśli udało się wykonać wszystkie serie w poprzednim tygodniu z dobrą techniką to dla ćwiczeń na nogi dodaj 5kg, dla ćwiczeń na górę ciała dodaj 2.5kg, w przeciwnym wypadku zostaw ciężar bez zmian, ciężar dodaj do ostatniego ciężaru z poprzedniego bloku czyli np. jeśli w ostatnim tygodniu poprzedniego bloku było robione 3RM to tu dodajemy ciężar i od niego liczymy poprzednie tygodnie do nowego bloku,
-- Zakres powtórzeń pobierz z `reps.md` dla danego ćwiczenia (np. `3–10`)
-- Tydzień 1 = górna granica zakresu, ostatni tydzień = dolna granica zakresu
-- Tygodnie pośrednie rozłóż równomiernie (interpolacja liniowa)
-- Przykład dla zakresu 3–10 i 5 tygodni: T1=10, T2=8, T3=6, T4=4, T5=3
+- Punkt startowy: ostatni ciężar z poprzedniego bloku (ostatni tydzień) + przyrost:
+  - nogi: +5 kg, górna partia: +2.5 kg (tylko jeśli technicznie zaliczone)
+- Oblicz ciężary **skryptem** (jeden wywołanie na ćwiczenie):
+  ```
+  cd training
+  .\calculate-rm.ps1 -Exercise "Nazwa" -CurrentWeight X -CurrentReps N -RepRange "low-high" -RpeRange "7-9" -Weeks ${input:weeks} -Round 2.5
+  ```
+  Skrypt zwraca ciężar dla każdego tygodnia — przepisz je do `sets[].weight_kg`.
 
-**Liczba serii roboczych:**
+**Liczba serii roboczych (`type: normal`):**
 
-| Reps w danym tygodniu | Serie robocze |
-|------------------------|---------------|
-| 7 i więcej | 3 |
-| 6 i mniej | 4 |
-| Bez zakresu (accessory) | zawsze 3 × 10 |
+| Reps w tygodniu | Serie normal |
+|-----------------|-------------|
+| 7 i więcej      | 3           |
+| 6 i mniej       | 4           |
+| Accessory (C)   | zawsze 3    |
 
-**Accessory (3 × 10, bez progresji):**
-- Dobierz RPE ~8 w tygodniu 1 i nie zmieniaj ciężaru przez cały blok
-- Priorytet: mięśnie nieobciążone głównym ruchem w danym dniu (np. core po squat, biceps/triceps po push-pull)
+**Sety rozgrzewkowe (`type: warmup`):**
+- Tylko dla ćwiczeń złożonych (A, B1, B2)
+- Schemat: ~50% × 8, ~70% × 5, ~85% × 3 (względem ciężaru T1)
+- Wstawiaj **przed** setami `normal` w tej samej liście `sets[]`
 
-**Rozgrzewki:**
-- Dla każdego ćwiczenia złożonego zawrzyj 3 serie rozgrzewkowe
-- Schemat: ~50% ciężaru roboczego × 8, ~70% × 5, ~85% × 3
+**Accessory (C):**
+- Zawsze 3 × 10, `weight_kg` dobrany na RPE ~8 w T1, bez zmian przez cały blok
+- Brak warmupów
+- Priorytet: mięśnie nieobciążone głównym ruchem danego dnia (core po squat, biceps/triceps po push-pull)
 
-**Obliczanie ciężaru**
-- Użyj skryptu calculate-rm.ps1 np.
-.\calculate-rm.ps1 -Exercise "Wyciskanie" -CurrentWeight 85 -CurrentReps 5 -RepRange "3-10" -Weeks 5 -Round 2.5
-Zwróci to ciężary dla każdego tygodnia.
+---
 
-### Format pliku wynikowego
+## KROK 5 — Zwaliduj plik
 
-Użyj struktury z [training/_program_template.md](../../training/_program_template.md) jako bazy.  
-Zastąp wszystkie placeholdery `{...}` rzeczywistymi wartościami.
+Po zapisaniu pliku uruchom walidator:
 
-W sekcji nagłówkowej dodaj:
-- Datę utworzenia bloku
-- Poprzedni blok (nazwa) i kluczowe zmiany względem niego
-- Link do `training/reps.md` jako referencja zakresów
+```powershell
+cd training
+Install-Module powershell-yaml -Scope CurrentUser -Force  # tylko jeśli brak modułu
+.\validate-program.ps1 -ProgramFile "./${input:name}_program.yaml"
+```
+
+Jeśli walidacja zwróci błędy — popraw plik i uruchom ponownie.  
+**Nie kończ pracy dopóki walidator nie wypisze `✅ Program valid`.**
