@@ -51,24 +51,24 @@ Write-Output "--------|------|-----|-------"
 for ($i = 0; $i -lt $Weeks; $i++) {
     if ($Weeks -eq 1) {
         $weekReps = $repUpper
-        $weekRpe  = $rpeLower
+        $weekRpe = $rpeLower
     }
     elseif ($i -eq 0) {
         $weekReps = $repUpper
-        $weekRpe  = $rpeLower
+        $weekRpe = $rpeLower
     }
     elseif ($i -eq ($Weeks - 1)) {
         $weekReps = $repLower
-        $weekRpe  = $rpeUpper
+        $weekRpe = $rpeUpper
     }
     else {
         $weekReps = [int][Math]::Floor($repUpper - $i * ($repUpper - $repLower) / ($Weeks - 1))
-        $weekRpe  = [int][Math]::Round($rpeLower  + $i * ($rpeUpper  - $rpeLower)  / ($Weeks - 1))
+        $weekRpe = [int][Math]::Round($rpeLower + $i * ($rpeUpper - $rpeLower) / ($Weeks - 1))
     }
 
     # RIR = 10 - RPE, więc ciężar dla N powt @ RPE X = ciężar dla (N + RIR) powt @ RPE 10
     $effectiveReps = $weekReps + (10 - $weekRpe)
-    $pct    = Get-PercentageOf1RM $effectiveReps
+    $pct = Get-PercentageOf1RM $effectiveReps
     $weight = Round-ToNearest ($estimated1RM * $pct) $Round
 
     $line = "T{0,-6}  | {1,-4} | {2,-3} | {3} kg" -f ($i + 1), $weekReps, $weekRpe, $weight
